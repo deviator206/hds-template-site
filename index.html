@@ -1,65 +1,137 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <title>HDS</title>
+video {
+  width: 100%;
+  height: auto;
+}
 
-  <!-- Bootstrap core CSS -->
-  <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  <!-- Custom styles for this template -->
-  <link href="cover.css" rel="stylesheet">
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+</style>
 </head>
+<body>
 
-<body class="text-center">
+<div class="header">
+  <h1>HDS</h1>
+</div>
 
-  <div class="container">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">HDS</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="#">Tutorial#1</a>
-          <a class="nav-link " href="#">Tutorial#2</a>
-          <a class="nav-link " href="#">Tutorial#3</a>
-        </nav>
-      </div>
-    </header>
-
-
-    <div class="row">
-      <div class="col-md-8">
-        <video width="600" controls>
-          <source src="./video/tutorial 1.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
-    </div>
-    <div class="row">
-     </div> 
-
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Site by <a href="https://www.linkedin.com/in/deviator206/">Deviator</a>.</p>
-      </div>
-    </footer>
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Tutorial #1 : The Sample name</li>
+      <li>Tutorial #2 : The Sample name</li>
+      <li>Tutorial #3 : The Sample name</li>
+      <li>Tutorial #4 : The Sample name</li>
+    </ul>
   </div>
 
+  <div class="col-8 col-s-9">
+    <h1>The Sample Name</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <video width="400" controls>
+      <source src="./video/tutorial 1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="./assets/js/vendor/popper.min.js"></script>
-  <script src="./dist/js/bootstrap.min.js"></script>
+  
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
 </body>
-
 </html>
+
